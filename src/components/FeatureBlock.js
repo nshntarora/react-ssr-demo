@@ -17,7 +17,7 @@ const FeatureBlock = props => {
   };
 
   return (
-    <li class={`fa fa-${icon}`}>
+    <li className={`fa fa-${icon}`}>
       <h3>{props.title}</h3>
       {getDescription()}
     </li>

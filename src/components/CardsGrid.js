@@ -35,10 +35,10 @@ class CardsGrid extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         {this.cards.map(row => {
           return (
-            <div class="row no-collapse-1">
+            <div className="row no-collapse-1">
               {row.map(card => {
                 return <Card image={card.image} />;
               })}

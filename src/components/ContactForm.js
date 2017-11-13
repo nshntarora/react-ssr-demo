@@ -3,34 +3,34 @@ import React from "react";
 class ContactForm extends React.Component {
     render() {
         return (
-            <div id="footer" class="wrapper style2">
-			<div class="container">
+            <div id="footer" className="wrapper style2">
+			<div className="container">
 				<section>
-					<header class="major">
+					<header className="major">
 						<h2>Mauris vulputate dolor</h2>
-						<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+						<span className="byline">Integer sit amet pede vel arcu aliquet pretium</span>
 					</header>
 					<form method="post" action="#">
-						<div class="row half">
-							<div class="12u">
-								<input class="text" type="text" name="name" id="name" placeholder="Name" />
+						<div className="row half">
+							<div className="12u">
+								<input className="text" type="text" name="name" id="name" placeholder="Name" />
 							</div>
 						</div>
-						<div class="row half">
-							<div class="12u">
-								<input class="text" type="text" name="email" id="email" placeholder="Email" />
+						<div className="row half">
+							<div className="12u">
+								<input className="text" type="text" name="email" id="email" placeholder="Email" />
 							</div>
 						</div>
-						<div class="row half">
-							<div class="12u">
+						<div className="row half">
+							<div className="12u">
 								<textarea name="message" id="message" placeholder="Message"></textarea>
 							</div>
 						</div>
-						<div class="row half">
-							<div class="12u">
-								<ul class="actions">
+						<div className="row half">
+							<div className="12u">
+								<ul className="actions">
 									<li>
-										<input type="submit" value="Send Message" class="button alt" />
+										<input type="submit" value="Send Message" className="button alt" />
 									</li>
 								</ul>
 							</div>

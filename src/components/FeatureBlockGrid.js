@@ -28,13 +28,13 @@ class FeatureBlockGrid extends React.Component {
   render() {
     return (
       <div id="main">
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
             {this.blocks.map(row => {
               return (
-                <div class="6u">
+                <div className="6u">
                   <section>
-                    <ul class="style">
+                    <ul className="style">
                       {row.map(block => {
                         return (
                           <FeatureBlock icon={block.icon} title={block.title} />
