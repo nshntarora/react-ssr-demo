@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import CardsGrid from "./components/CardsGrid";
 import FeatureBlockGrid from "./components/FeatureBlockGrid";
+import ContactForm from "./components/ContactForm";
 
 import './assets/css/skel.css';
 import './assets/css/App.css';
@@ -17,6 +18,7 @@ class App extends React.Component {
           <Banner></Banner>
           <CardsGrid></CardsGrid>
           <FeatureBlockGrid></FeatureBlockGrid>
+          <ContactForm></ContactForm>
         </div>
       </div>
     );
