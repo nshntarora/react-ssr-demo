@@ -15,7 +15,8 @@
     "webpack-node-externals": "^1.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "./node_modules/.bin/webpack && NODE_ENV='production' node dist/server.js",
+    "start:react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
