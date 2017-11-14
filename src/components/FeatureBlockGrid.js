@@ -2,42 +2,43 @@ import React from "react";
 
 import FeatureBlock from "./FeatureBlock";
 
+const blocks = [
+  [
+    {
+      title: "Integer ultrices",
+      icon: "wrench"
+    },
+    {
+      title: "Aliquam luctus",
+      icon: "leaf"
+    }
+  ],
+  [
+    {
+      title: "Integer ultrices",
+      icon: "cogs"
+    },
+    {
+      title: "Aliquam luctus",
+      icon: "road"
+    }
+  ]
+];
+
 class FeatureBlockGrid extends React.Component {
-  blocks = [
-    [
-      {
-        title: "Integer ultrices",
-        icon: "wrench"
-      },
-      {
-        title: "Aliquam luctus",
-        icon: "leaf"
-      }
-    ],
-    [
-      {
-        title: "Integer ultrices",
-        icon: "cogs"
-      },
-      {
-        title: "Aliquam luctus",
-        icon: "road"
-      }
-    ]
-  ];
   render() {
     return (
       <div id="main">
         <div className="container">
           <div className="row">
-            {this.blocks.map(row => {
+            {blocks.map((row, i) => {
               return (
-                <div className="6u">
+                <div className="6u" key={i}>
                   <section>
                     <ul className="style">
-                      {row.map(block => {
+                      {row.map((block, i) => {
                         return (
-                          <FeatureBlock icon={block.icon} title={block.title} />
+                          <FeatureBlock key={i} icon={block.icon} title={block.title} />
                         );
                       })}
                     </ul>
