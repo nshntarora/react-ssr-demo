@@ -29,11 +29,16 @@ function handleRender(req, res) {
 }
 
 // Serve built files with static files middleware
+app.use('/csr', express.static(path.join(__dirname, 'build')));
 app.use('/static', express.static(path.join(__dirname, 'build', 'static')));
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
-
 // Serve requests with our handleRender function
-app.get("*", handleRender);
+app.get("/ssr", handleRender);
+
+app.get("/", function(req, res) {
+  const filePath = path.resolve(__dirname, "index.html");
+  res.sendFile(filePath);
+});
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("The server is running on port 5000");
